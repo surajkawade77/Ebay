@@ -32,28 +32,13 @@ import org.testng.annotations.BeforeClass;
 public class validate_Ebay_Login extends Ebay_Base_Class implements ITestListener
 {
 	 
-	public void onTestFailure(ITestResult result) {
-		// TODO Auto-generated method stub
-		Reporter.log("TC failed please try again..", true);
-//		try {
-//			Ebay_Utils.screenshot(driver, "validate_Ebay_Login failed");
-//			
-//		} catch (IOException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
+	public void onTestFailure(ITestResult result) 
+	{
+				Reporter.log("TC failed please try again..", true);
 	}
-	public void onTestSuccess(ITestResult result) {
-		// TODO Auto-generated method stub
+	public void onTestSuccess(ITestResult result) 
+	{
 		Reporter.log("TC passed successfull.", true);
-		
-//			try {
-//				Ebay_Utils.screenshot(driver, "validate_Ebay_Login passed");
-//			} catch (IOException e) {
-//				// TODO Auto-generated catch block
-//				e.printStackTrace();
-//			}
-		
 	              }
  
 	Ebay_Utils util=new Ebay_Utils();
